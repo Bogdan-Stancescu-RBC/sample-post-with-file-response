@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', (req, res) => {
   res
     .status(200)
-    .end('<form method="POST">Scrie ceva aici &rarr; <input type="text" name="textul"><input type="submit"></form>');
+    .end('<html><head></head><body><form method="POST">Scrie ceva aici &rarr; <input type="text" name="textul"><input type="submit"></form></body></html>');
 });
 
 app.post('/', (req, res) => {
